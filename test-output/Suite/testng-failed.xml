@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="TC_0028_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_DecreasedCost(failed)">
+    <classes>
+      <class name="com.MGSClassic_Execution_Classes.TC_0028_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_DecreasedCost">
+        <methods>
+          <include name="Beforetest"/>
+          <include name="TC_0028_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_DecreasedCost"/>
+        </methods>
+      </class> <!-- com.MGSClassic_Execution_Classes.TC_0028_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_DecreasedCost -->
+    </classes>
+  </test> <!-- TC_0028_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_DecreasedCost(failed) -->
+  <test thread-count="5" name="TC_0030_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_IncreasedCost(failed)">
+    <classes>
+      <class name="com.MGSClassic_Execution_Classes.TC_0030_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_IncreasedCost">
+        <methods>
+          <include name="TC_0029_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_IncreasedCost"/>
+          <include name="Beforetest"/>
+        </methods>
+      </class> <!-- com.MGSClassic_Execution_Classes.TC_0030_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_IncreasedCost -->
+    </classes>
+  </test> <!-- TC_0030_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_IncreasedCost(failed) -->
+  <test thread-count="5" name="TC_0033_Regression_MGSClassic_Change2to1BottleMembership_Immediately(failed)">
+    <classes>
+      <class name="com.MGSClassic_Execution_Classes.TC_0033_Regression_MGSClassic_Change2to1BottleMembership_Immediately">
+        <methods>
+          <include name="TC_0033_Regression_MGSClassic_Change2to1BottleMembership_Immediately"/>
+          <include name="Beforetest"/>
+        </methods>
+      </class> <!-- com.MGSClassic_Execution_Classes.TC_0033_Regression_MGSClassic_Change2to1BottleMembership_Immediately -->
+    </classes>
+  </test> <!-- TC_0033_Regression_MGSClassic_Change2to1BottleMembership_Immediately(failed) -->
+  <test thread-count="5" name="TC_0034_Regression_MGSClassic_Change1to2BottleMembership_NextBillingCycle(failed)">
+    <classes>
+      <class name="com.MGSClassic_Execution_Classes.TC_0034_Regression_MGSClassic_Change1to2BottleMembership_NextBillingCycle">
+        <methods>
+          <include name="TC_0034_Regression_MGSClassic_Change1to2BottleMembership_NextBillingCycle"/>
+          <include name="Beforetest"/>
+        </methods>
+      </class> <!-- com.MGSClassic_Execution_Classes.TC_0034_Regression_MGSClassic_Change1to2BottleMembership_NextBillingCycle -->
+    </classes>
+  </test> <!-- TC_0034_Regression_MGSClassic_Change1to2BottleMembership_NextBillingCycle(failed) -->
+  <test thread-count="5" name="TC_0035_Regression_MGSClassic_Change2to1BottleMembership_NextBillingCycle(failed)">
+    <classes>
+      <class name="com.MGSClassic_Execution_Classes.TC_0035_Regression_MGSClassic_Change2to1BottleMembership_NextBillingCycle">
+        <methods>
+          <include name="TC_0035_Regression_MGSClassic_Change2to1BottleMembership_NextBillingCycle"/>
+          <include name="Beforetest"/>
+        </methods>
+      </class> <!-- com.MGSClassic_Execution_Classes.TC_0035_Regression_MGSClassic_Change2to1BottleMembership_NextBillingCycle -->
+    </classes>
+  </test> <!-- TC_0035_Regression_MGSClassic_Change2to1BottleMembership_NextBillingCycle(failed) -->
+</suite> <!-- Failed suite [Suite] -->

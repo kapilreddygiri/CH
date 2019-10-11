@@ -1,0 +1,2131 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>HTML AUtomation Test Execution Report</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Oct 6, 2019 04:39:31 AM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='93.539%'><span class='strong'>333</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='4.213%'>15</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='2.247%'>8</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Complimentary Sign Up</span>
+						<span class='test-time'>Oct 6, 2019 04:39:31 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 6, 2019 04:39:31 AM</span>
+	<span class='label end-time'>Oct 6, 2019 05:01:13 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 21m 41s+785ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>4:39:31 AM</td>
+					<td class='step-details'>Complimentary Sign Up</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:39:56 AM</td>
+					<td class='step-details'>Successfully entered User Name: kgiri@chwinery.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:39:58 AM</td>
+					<td class='step-details'>Successfully entered Password: Tenpath!23</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:40:11 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonLog In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:40:37 AM</td>
+					<td class='step-details'>Successfully clicked on link: Lightning User Image</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:40:45 AM</td>
+					<td class='step-details'>Successfully clicked on link: Switch to SalesForce Classic</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:40:45 AM</td>
+					<td class='step-details'>Successfully Navigated toHome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:40:49 AM</td>
+					<td class='step-details'>Successfully clicked on link: WC Members</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:40:52 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonNew Member</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:40:54 AM</td>
+					<td class='step-details'>Successfully selected from Record Type of new record DropDown (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:03 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonWC Member Continue</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:03 AM</td>
+					<td class='step-details'>Card number not in datasheet.  Randomly generated as: 66696429</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:05 AM</td>
+					<td class='step-details'>Successfully entered Card Number: 66696429</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:08 AM</td>
+					<td class='step-details'>Successfully entered Sign Up Location: 999 Member Services</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:10 AM</td>
+					<td class='step-details'>Successfully entered First Name: Gina</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:12 AM</td>
+					<td class='step-details'>Successfully entered Last Name: 9873473</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:15 AM</td>
+					<td class='step-details'>Successfully selected from Delivery DropDown (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:18 AM</td>
+					<td class='step-details'>Successfully selected from # of Bottles DropDown (1)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:21 AM</td>
+					<td class='step-details'>Successfully selected from Duration of Membership DropDown (3)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:21 AM</td>
+					<td class='step-details'>Verify MemberShip Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:22 AM</td>
+					<td class='step-details'>Verify Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:24 AM</td>
+					<td class='step-details'>Successfully entered Email: gsynakie@gmail.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:26 AM</td>
+					<td class='step-details'>Successfully selected from Gender DropDown (Not Provided)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:28 AM</td>
+					<td class='step-details'>Successfully entered Birthdate: 7/26/1988</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:31 AM</td>
+					<td class='step-details'>Successfully entered Phone: (219) 765-8657</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:33 AM</td>
+					<td class='step-details'>Successfully entered Home Street: 2740 Camelot Drive</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:35 AM</td>
+					<td class='step-details'>Successfully entered Home City: Dyer</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:37 AM</td>
+					<td class='step-details'>Successfully selected from Home State/Province DropDown (Indiana)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:40 AM</td>
+					<td class='step-details'>Successfully entered Home Zip/Postal Code: 46311</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:40 AM</td>
+					<td class='step-details'>Delivery Type is not Equal to Delivery, So not clicking on (Verify Address With Ship Complaint)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:48 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonSave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:49 AM</td>
+					<td class='step-details'>Verify Valididate WC Card Number Text matches: Actual Value(66696429) Expected Value (66696429)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:49 AM</td>
+					<td class='step-details'>Verify Validate Lightning WC Name Text matches: Actual Value(Gina 9873473) Expected Value (Gina 9873473)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:49 AM</td>
+					<td class='step-details'>Verify Valididate WC Membership Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:50 AM</td>
+					<td class='step-details'>Verify Valididate WC Delivery Text matches: Actual Value(Pickup) Expected Value (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:50 AM</td>
+					<td class='step-details'>Verify Valididate WC Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:51 AM</td>
+					<td class='step-details'>Verify Valididate WC # of Bottles Text matches: Actual Value(1) Expected Value (1)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:51 AM</td>
+					<td class='step-details'>Verify Valididate WC Member Status Text matches: Actual Value(Active) Expected Value (Active)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:41:52 AM</td>
+					<td class='step-details'>Verify Valididate Duration of MemberShip Text matches: Actual Value(3) Expected Value (3)</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:42:32 AM</td>
+					<td class='step-details'>Error message not displayed</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:42:32 AM</td>
+					<td class='step-details'>Complimentary Sign Up Data Row Number, 1</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>4:42:32 AM</td>
+					<td class='step-details'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='dataCol inlineEditWrite']/div/input"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TP-LAP0039', ip: '192.168.0.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\kgiri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 177b4e6ffcccf73fba08dc74bf702716
+*** Element info: {Using=xpath, value=//td[@class='dataCol inlineEditWrite']/div/input}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:42:34 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Name on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:42:43 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Logout button on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:42:47 AM</td>
+					<td class='step-details'>Successfully entered User Name: kgiri@chwinery.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:42:49 AM</td>
+					<td class='step-details'>Successfully entered Password: Tenpath!23</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:42:55 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonLog In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:20 AM</td>
+					<td class='step-details'>Successfully clicked on link: Lightning User Image</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:23 AM</td>
+					<td class='step-details'>Successfully clicked on link: Switch to SalesForce Classic</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:24 AM</td>
+					<td class='step-details'>Successfully Navigated toHome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:27 AM</td>
+					<td class='step-details'>Successfully clicked on link: WC Members</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:29 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonNew Member</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:32 AM</td>
+					<td class='step-details'>Successfully selected from Record Type of new record DropDown (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:36 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonWC Member Continue</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:36 AM</td>
+					<td class='step-details'>Card number not in datasheet.  Randomly generated as: 85975112</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:38 AM</td>
+					<td class='step-details'>Successfully entered Card Number: 85975112</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:41 AM</td>
+					<td class='step-details'>Successfully entered Sign Up Location: 999 Member Services</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:43 AM</td>
+					<td class='step-details'>Successfully entered First Name: Davida</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:46 AM</td>
+					<td class='step-details'>Successfully entered Last Name: Aguirre-Laganadre</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:48 AM</td>
+					<td class='step-details'>Successfully selected from Delivery DropDown (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:51 AM</td>
+					<td class='step-details'>Successfully selected from # of Bottles DropDown (1)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:54 AM</td>
+					<td class='step-details'>Successfully selected from Duration of Membership DropDown (6)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:55 AM</td>
+					<td class='step-details'>Verify MemberShip Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:55 AM</td>
+					<td class='step-details'>Verify Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:57 AM</td>
+					<td class='step-details'>Successfully entered Email: davidawilliams85@gmail.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:43:59 AM</td>
+					<td class='step-details'>Successfully selected from Gender DropDown (Not Provided)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:02 AM</td>
+					<td class='step-details'>Successfully entered Birthdate: 5/15/1985</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:04 AM</td>
+					<td class='step-details'>Successfully entered Phone: (773) 729-0709</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:06 AM</td>
+					<td class='step-details'>Successfully entered Home Street: 7933 S. Princeton Ave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:08 AM</td>
+					<td class='step-details'>Successfully entered Home City: Chicago</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:11 AM</td>
+					<td class='step-details'>Successfully selected from Home State/Province DropDown (Illinois)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:13 AM</td>
+					<td class='step-details'>Successfully entered Home Zip/Postal Code: 60620</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:13 AM</td>
+					<td class='step-details'>Delivery Type is not Equal to Delivery, So not clicking on (Verify Address With Ship Complaint)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:22 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonSave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:22 AM</td>
+					<td class='step-details'>Verify Valididate WC Card Number Text matches: Actual Value(85975112) Expected Value (85975112)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:23 AM</td>
+					<td class='step-details'>Verify Validate Lightning WC Name Text matches: Actual Value(Davida Aguirre-Laganadre) Expected Value (Davida Aguirre-Laganadre)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:23 AM</td>
+					<td class='step-details'>Verify Valididate WC Membership Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:24 AM</td>
+					<td class='step-details'>Verify Valididate WC Delivery Text matches: Actual Value(Pickup) Expected Value (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:24 AM</td>
+					<td class='step-details'>Verify Valididate WC Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:25 AM</td>
+					<td class='step-details'>Verify Valididate WC # of Bottles Text matches: Actual Value(1) Expected Value (1)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:25 AM</td>
+					<td class='step-details'>Verify Valididate WC Member Status Text matches: Actual Value(Active) Expected Value (Active)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:44:25 AM</td>
+					<td class='step-details'>Verify Valididate Duration of MemberShip Text matches: Actual Value(6) Expected Value (6)</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:45:05 AM</td>
+					<td class='step-details'>Error message not displayed</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:45:05 AM</td>
+					<td class='step-details'>Complimentary Sign Up Data Row Number, 2</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>4:45:05 AM</td>
+					<td class='step-details'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='dataCol inlineEditWrite']/div/input"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TP-LAP0039', ip: '192.168.0.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\kgiri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 177b4e6ffcccf73fba08dc74bf702716
+*** Element info: {Using=xpath, value=//td[@class='dataCol inlineEditWrite']/div/input}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:45:08 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Name on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:45:15 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Logout button on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:45:19 AM</td>
+					<td class='step-details'>Successfully entered User Name: kgiri@chwinery.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:45:21 AM</td>
+					<td class='step-details'>Successfully entered Password: Tenpath!23</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:45:27 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonLog In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:45:52 AM</td>
+					<td class='step-details'>Successfully clicked on link: Lightning User Image</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:45:55 AM</td>
+					<td class='step-details'>Successfully clicked on link: Switch to SalesForce Classic</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:45:56 AM</td>
+					<td class='step-details'>Successfully Navigated toHome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:45:59 AM</td>
+					<td class='step-details'>Successfully clicked on link: WC Members</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:02 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonNew Member</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:04 AM</td>
+					<td class='step-details'>Successfully selected from Record Type of new record DropDown (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:08 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonWC Member Continue</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:08 AM</td>
+					<td class='step-details'>Card number not in datasheet.  Randomly generated as: 64528945</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:11 AM</td>
+					<td class='step-details'>Successfully entered Card Number: 64528945</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:13 AM</td>
+					<td class='step-details'>Successfully entered Sign Up Location: 999 Member Services</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:16 AM</td>
+					<td class='step-details'>Successfully entered First Name: Karyn</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:18 AM</td>
+					<td class='step-details'>Successfully entered Last Name: 9693395</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:20 AM</td>
+					<td class='step-details'>Successfully selected from Delivery DropDown (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:23 AM</td>
+					<td class='step-details'>Successfully selected from # of Bottles DropDown (1)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:26 AM</td>
+					<td class='step-details'>Successfully selected from Duration of Membership DropDown (12)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:27 AM</td>
+					<td class='step-details'>Verify MemberShip Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:27 AM</td>
+					<td class='step-details'>Verify Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:30 AM</td>
+					<td class='step-details'>Successfully entered Email: dkb091298@comcast.net</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:32 AM</td>
+					<td class='step-details'>Successfully selected from Gender DropDown (Not Provided)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:34 AM</td>
+					<td class='step-details'>Successfully entered Birthdate: 2/26/1967</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:36 AM</td>
+					<td class='step-details'>Successfully entered Phone: (815) 834-0734</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:38 AM</td>
+					<td class='step-details'>Successfully entered Home Street: 16434 Lanfear Drive</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:41 AM</td>
+					<td class='step-details'>Successfully entered Home City: Lockport</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:43 AM</td>
+					<td class='step-details'>Successfully selected from Home State/Province DropDown (Illinois)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:45 AM</td>
+					<td class='step-details'>Successfully entered Home Zip/Postal Code: 60441</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:47 AM</td>
+					<td class='step-details'>Successfully entered Shipping Street: 16434 Lanfear Drive</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:50 AM</td>
+					<td class='step-details'>Successfully entered Shipping City: Lockport</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:52 AM</td>
+					<td class='step-details'>Successfully selected from Shipping State/Province DropDown (Illinois)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:54 AM</td>
+					<td class='step-details'>Successfully entered Shipping Zip/Postal Code: 60441</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:46:54 AM</td>
+					<td class='step-details'>Delivery Type is not Equal to Delivery, So not clicking on (Verify Address With Ship Complaint)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:01 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonSave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:01 AM</td>
+					<td class='step-details'>Verify Valididate WC Card Number Text matches: Actual Value(64528945) Expected Value (64528945)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:02 AM</td>
+					<td class='step-details'>Verify Validate Lightning WC Name Text matches: Actual Value(Karyn 9693395) Expected Value (Karyn 9693395)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:02 AM</td>
+					<td class='step-details'>Verify Valididate WC Membership Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:02 AM</td>
+					<td class='step-details'>Verify Valididate WC Delivery Text matches: Actual Value(Pickup) Expected Value (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:03 AM</td>
+					<td class='step-details'>Verify Valididate WC Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:03 AM</td>
+					<td class='step-details'>Verify Valididate WC # of Bottles Text matches: Actual Value(1) Expected Value (1)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:04 AM</td>
+					<td class='step-details'>Verify Valididate WC Member Status Text matches: Actual Value(Active) Expected Value (Active)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:04 AM</td>
+					<td class='step-details'>Verify Valididate Duration of MemberShip Text matches: Actual Value(12) Expected Value (12)</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:47:45 AM</td>
+					<td class='step-details'>Error message not displayed</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:47:45 AM</td>
+					<td class='step-details'>Complimentary Sign Up Data Row Number, 3</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>4:47:45 AM</td>
+					<td class='step-details'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='dataCol inlineEditWrite']/div/input"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TP-LAP0039', ip: '192.168.0.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\kgiri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 177b4e6ffcccf73fba08dc74bf702716
+*** Element info: {Using=xpath, value=//td[@class='dataCol inlineEditWrite']/div/input}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:47 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Name on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:54 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Logout button on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:47:58 AM</td>
+					<td class='step-details'>Successfully entered User Name: kgiri@chwinery.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:00 AM</td>
+					<td class='step-details'>Successfully entered Password: Tenpath!23</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:07 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonLog In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:32 AM</td>
+					<td class='step-details'>Successfully clicked on link: Lightning User Image</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:35 AM</td>
+					<td class='step-details'>Successfully clicked on link: Switch to SalesForce Classic</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:36 AM</td>
+					<td class='step-details'>Successfully Navigated toHome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:39 AM</td>
+					<td class='step-details'>Successfully clicked on link: WC Members</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:41 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonNew Member</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:44 AM</td>
+					<td class='step-details'>Successfully selected from Record Type of new record DropDown (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:48 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonWC Member Continue</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:48 AM</td>
+					<td class='step-details'>Card number not in datasheet.  Randomly generated as: 59393418</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:50 AM</td>
+					<td class='step-details'>Successfully entered Card Number: 59393418</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:53 AM</td>
+					<td class='step-details'>Successfully entered Sign Up Location: 999 Member Services</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:55 AM</td>
+					<td class='step-details'>Successfully entered First Name: CATHERINE B</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:48:57 AM</td>
+					<td class='step-details'>Successfully entered Last Name: 9047710</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:00 AM</td>
+					<td class='step-details'>Successfully selected from Delivery DropDown (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:03 AM</td>
+					<td class='step-details'>Successfully selected from # of Bottles DropDown (2)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:06 AM</td>
+					<td class='step-details'>Successfully selected from Duration of Membership DropDown (3)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:06 AM</td>
+					<td class='step-details'>Verify MemberShip Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:07 AM</td>
+					<td class='step-details'>Verify Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:09 AM</td>
+					<td class='step-details'>Successfully entered Email: bauerherman@yahoo.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:11 AM</td>
+					<td class='step-details'>Successfully selected from Gender DropDown (Not Provided)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:14 AM</td>
+					<td class='step-details'>Successfully entered Birthdate: 9/18/1958</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:16 AM</td>
+					<td class='step-details'>Successfully entered Phone: (301) 873-8038</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:18 AM</td>
+					<td class='step-details'>Successfully entered Home Street: 8603 Brarcroft Lane</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:20 AM</td>
+					<td class='step-details'>Successfully entered Home City: Laurel</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:23 AM</td>
+					<td class='step-details'>Successfully selected from Home State/Province DropDown (Maryland)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:25 AM</td>
+					<td class='step-details'>Successfully entered Home Zip/Postal Code: 20708</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:25 AM</td>
+					<td class='step-details'>Delivery Type is not Equal to Delivery, So not clicking on (Verify Address With Ship Complaint)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:32 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonSave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:32 AM</td>
+					<td class='step-details'>Verify Valididate WC Card Number Text matches: Actual Value(59393418) Expected Value (59393418)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:33 AM</td>
+					<td class='step-details'>Verify Validate Lightning WC Name Text matches: Actual Value(CATHERINE B 9047710) Expected Value (CATHERINE B 9047710)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:33 AM</td>
+					<td class='step-details'>Verify Valididate WC Membership Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:34 AM</td>
+					<td class='step-details'>Verify Valididate WC Delivery Text matches: Actual Value(Pickup) Expected Value (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:34 AM</td>
+					<td class='step-details'>Verify Valididate WC Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:34 AM</td>
+					<td class='step-details'>Verify Valididate WC # of Bottles Text matches: Actual Value(2) Expected Value (2)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:35 AM</td>
+					<td class='step-details'>Verify Valididate WC Member Status Text matches: Actual Value(Active) Expected Value (Active)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:49:35 AM</td>
+					<td class='step-details'>Verify Valididate Duration of MemberShip Text matches: Actual Value(3) Expected Value (3)</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:50:15 AM</td>
+					<td class='step-details'>Error message not displayed</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:50:15 AM</td>
+					<td class='step-details'>Complimentary Sign Up Data Row Number, 4</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>4:50:15 AM</td>
+					<td class='step-details'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='dataCol inlineEditWrite']/div/input"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TP-LAP0039', ip: '192.168.0.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\kgiri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 177b4e6ffcccf73fba08dc74bf702716
+*** Element info: {Using=xpath, value=//td[@class='dataCol inlineEditWrite']/div/input}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:50:17 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Name on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:50:25 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Logout button on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:50:29 AM</td>
+					<td class='step-details'>Successfully entered User Name: kgiri@chwinery.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:50:31 AM</td>
+					<td class='step-details'>Successfully entered Password: Tenpath!23</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:50:37 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonLog In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:02 AM</td>
+					<td class='step-details'>Successfully clicked on link: Lightning User Image</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:05 AM</td>
+					<td class='step-details'>Successfully clicked on link: Switch to SalesForce Classic</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:05 AM</td>
+					<td class='step-details'>Successfully Navigated toHome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:08 AM</td>
+					<td class='step-details'>Successfully clicked on link: WC Members</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:11 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonNew Member</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:13 AM</td>
+					<td class='step-details'>Successfully selected from Record Type of new record DropDown (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:18 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonWC Member Continue</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:18 AM</td>
+					<td class='step-details'>Card number not in datasheet.  Randomly generated as: 16338293</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:20 AM</td>
+					<td class='step-details'>Successfully entered Card Number: 16338293</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:23 AM</td>
+					<td class='step-details'>Successfully entered Sign Up Location: 999 Member Services</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:25 AM</td>
+					<td class='step-details'>Successfully entered First Name: KIMBERLY</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:27 AM</td>
+					<td class='step-details'>Successfully entered Last Name: 9514549</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:30 AM</td>
+					<td class='step-details'>Successfully selected from Delivery DropDown (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:33 AM</td>
+					<td class='step-details'>Successfully selected from # of Bottles DropDown (2)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:36 AM</td>
+					<td class='step-details'>Successfully selected from Duration of Membership DropDown (6)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:36 AM</td>
+					<td class='step-details'>Verify MemberShip Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:37 AM</td>
+					<td class='step-details'>Verify Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:39 AM</td>
+					<td class='step-details'>Successfully entered Email: katfisch29@gmail.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:41 AM</td>
+					<td class='step-details'>Successfully selected from Gender DropDown (Not Provided)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:44 AM</td>
+					<td class='step-details'>Successfully entered Birthdate: 10/4/1978</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:46 AM</td>
+					<td class='step-details'>Successfully entered Phone: (407) 575-8334</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:48 AM</td>
+					<td class='step-details'>Successfully entered Home Street: 1617 Cutty Sark Road</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:50 AM</td>
+					<td class='step-details'>Successfully entered Home City: Virginia Beach</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:52 AM</td>
+					<td class='step-details'>Successfully selected from Home State/Province DropDown (Virginia)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:55 AM</td>
+					<td class='step-details'>Successfully entered Home Zip/Postal Code: 23454</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:51:55 AM</td>
+					<td class='step-details'>Delivery Type is not Equal to Delivery, So not clicking on (Verify Address With Ship Complaint)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:03 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonSave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:03 AM</td>
+					<td class='step-details'>Verify Valididate WC Card Number Text matches: Actual Value(16338293) Expected Value (16338293)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:04 AM</td>
+					<td class='step-details'>Verify Validate Lightning WC Name Text matches: Actual Value(KIMBERLY 9514549) Expected Value (KIMBERLY 9514549)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:04 AM</td>
+					<td class='step-details'>Verify Valididate WC Membership Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:05 AM</td>
+					<td class='step-details'>Verify Valididate WC Delivery Text matches: Actual Value(Pickup) Expected Value (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:05 AM</td>
+					<td class='step-details'>Verify Valididate WC Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:05 AM</td>
+					<td class='step-details'>Verify Valididate WC # of Bottles Text matches: Actual Value(2) Expected Value (2)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:06 AM</td>
+					<td class='step-details'>Verify Valididate WC Member Status Text matches: Actual Value(Active) Expected Value (Active)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:06 AM</td>
+					<td class='step-details'>Verify Valididate Duration of MemberShip Text matches: Actual Value(6) Expected Value (6)</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:52:46 AM</td>
+					<td class='step-details'>Error message not displayed</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:52:46 AM</td>
+					<td class='step-details'>Complimentary Sign Up Data Row Number, 5</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>4:52:46 AM</td>
+					<td class='step-details'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='dataCol inlineEditWrite']/div/input"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TP-LAP0039', ip: '192.168.0.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\kgiri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 177b4e6ffcccf73fba08dc74bf702716
+*** Element info: {Using=xpath, value=//td[@class='dataCol inlineEditWrite']/div/input}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:48 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Name on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:52:56 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Logout button on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:00 AM</td>
+					<td class='step-details'>Successfully entered User Name: kgiri@chwinery.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:02 AM</td>
+					<td class='step-details'>Successfully entered Password: Tenpath!23</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:08 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonLog In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:33 AM</td>
+					<td class='step-details'>Successfully clicked on link: Lightning User Image</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:36 AM</td>
+					<td class='step-details'>Successfully clicked on link: Switch to SalesForce Classic</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:37 AM</td>
+					<td class='step-details'>Successfully Navigated toHome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:40 AM</td>
+					<td class='step-details'>Successfully clicked on link: WC Members</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:43 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonNew Member</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:45 AM</td>
+					<td class='step-details'>Successfully selected from Record Type of new record DropDown (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:49 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonWC Member Continue</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:49 AM</td>
+					<td class='step-details'>Card number not in datasheet.  Randomly generated as: 24826872</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:51 AM</td>
+					<td class='step-details'>Successfully entered Card Number: 24826872</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:54 AM</td>
+					<td class='step-details'>Successfully entered Sign Up Location: 999 Member Services</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:56 AM</td>
+					<td class='step-details'>Successfully entered First Name: Helen</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:53:59 AM</td>
+					<td class='step-details'>Successfully entered Last Name: Sheehan</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:01 AM</td>
+					<td class='step-details'>Successfully selected from Delivery DropDown (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:04 AM</td>
+					<td class='step-details'>Successfully selected from # of Bottles DropDown (2)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:07 AM</td>
+					<td class='step-details'>Successfully selected from Duration of Membership DropDown (12)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:08 AM</td>
+					<td class='step-details'>Verify MemberShip Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:08 AM</td>
+					<td class='step-details'>Verify Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:10 AM</td>
+					<td class='step-details'>Successfully entered Email: kellym1220@yahoo.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:12 AM</td>
+					<td class='step-details'>Successfully selected from Gender DropDown (Not Provided)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:15 AM</td>
+					<td class='step-details'>Successfully entered Birthdate: 12/20/1962</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:17 AM</td>
+					<td class='step-details'>Successfully entered Phone: (407) 864-9956</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:19 AM</td>
+					<td class='step-details'>Successfully entered Home Street: 5629 Baybrook Ave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:21 AM</td>
+					<td class='step-details'>Successfully entered Home City: Orlando</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:23 AM</td>
+					<td class='step-details'>Successfully selected from Home State/Province DropDown (Florida)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:26 AM</td>
+					<td class='step-details'>Successfully entered Home Zip/Postal Code: 32819</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:26 AM</td>
+					<td class='step-details'>Delivery Type is not Equal to Delivery, So not clicking on (Verify Address With Ship Complaint)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:32 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonSave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:33 AM</td>
+					<td class='step-details'>Verify Valididate WC Card Number Text matches: Actual Value(24826872) Expected Value (24826872)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:33 AM</td>
+					<td class='step-details'>Verify Validate Lightning WC Name Text matches: Actual Value(Helen Sheehan) Expected Value (Helen Sheehan)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:33 AM</td>
+					<td class='step-details'>Verify Valididate WC Membership Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:34 AM</td>
+					<td class='step-details'>Verify Valididate WC Delivery Text matches: Actual Value(Pickup) Expected Value (Pickup)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:34 AM</td>
+					<td class='step-details'>Verify Valididate WC Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:35 AM</td>
+					<td class='step-details'>Verify Valididate WC # of Bottles Text matches: Actual Value(2) Expected Value (2)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:35 AM</td>
+					<td class='step-details'>Verify Valididate WC Member Status Text matches: Actual Value(Active) Expected Value (Active)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:54:35 AM</td>
+					<td class='step-details'>Verify Valididate Duration of MemberShip Text matches: Actual Value(12) Expected Value (12)</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:55:16 AM</td>
+					<td class='step-details'>Error message not displayed</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:55:16 AM</td>
+					<td class='step-details'>Complimentary Sign Up Data Row Number, 6</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>4:55:16 AM</td>
+					<td class='step-details'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='dataCol inlineEditWrite']/div/input"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TP-LAP0039', ip: '192.168.0.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\kgiri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 177b4e6ffcccf73fba08dc74bf702716
+*** Element info: {Using=xpath, value=//td[@class='dataCol inlineEditWrite']/div/input}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:55:18 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Name on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:55:25 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Logout button on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:55:29 AM</td>
+					<td class='step-details'>Successfully entered User Name: kgiri@chwinery.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:55:31 AM</td>
+					<td class='step-details'>Successfully entered Password: Tenpath!23</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:55:37 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonLog In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:03 AM</td>
+					<td class='step-details'>Successfully clicked on link: Lightning User Image</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:06 AM</td>
+					<td class='step-details'>Successfully clicked on link: Switch to SalesForce Classic</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:06 AM</td>
+					<td class='step-details'>Successfully Navigated toHome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:09 AM</td>
+					<td class='step-details'>Successfully clicked on link: WC Members</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:12 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonNew Member</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:14 AM</td>
+					<td class='step-details'>Successfully selected from Record Type of new record DropDown (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:19 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonWC Member Continue</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:19 AM</td>
+					<td class='step-details'>Card number not in datasheet.  Randomly generated as: 71499544</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:21 AM</td>
+					<td class='step-details'>Successfully entered Card Number: 71499544</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:24 AM</td>
+					<td class='step-details'>Successfully entered Sign Up Location: 13 Tampa</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:26 AM</td>
+					<td class='step-details'>Successfully entered First Name: Dolores</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:28 AM</td>
+					<td class='step-details'>Successfully entered Last Name: Hunter</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:30 AM</td>
+					<td class='step-details'>Successfully selected from Delivery DropDown (Delivery)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:33 AM</td>
+					<td class='step-details'>Successfully selected from # of Bottles DropDown (1)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:37 AM</td>
+					<td class='step-details'>Successfully selected from Duration of Membership DropDown (3)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:37 AM</td>
+					<td class='step-details'>Verify MemberShip Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:37 AM</td>
+					<td class='step-details'>Verify Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:40 AM</td>
+					<td class='step-details'>Successfully entered Email: barnhja@gmail.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:42 AM</td>
+					<td class='step-details'>Successfully selected from Gender DropDown (Not Provided)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:44 AM</td>
+					<td class='step-details'>Successfully entered Birthdate: 7/7/1992</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:46 AM</td>
+					<td class='step-details'>Successfully entered Phone: (309) 371-9855</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:49 AM</td>
+					<td class='step-details'>Successfully entered Home Street: 6807 W. Main St.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:51 AM</td>
+					<td class='step-details'>Successfully entered Home City: Maryville</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:53 AM</td>
+					<td class='step-details'>Successfully selected from Home State/Province DropDown (Illinois)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:55 AM</td>
+					<td class='step-details'>Successfully entered Home Zip/Postal Code: 62062</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:56:57 AM</td>
+					<td class='step-details'>Successfully entered Shipping Street: 6807 W. Main St.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:00 AM</td>
+					<td class='step-details'>Successfully entered Shipping City: Maryville</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:02 AM</td>
+					<td class='step-details'>Successfully selected from Shipping State/Province DropDown (Illinois)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:04 AM</td>
+					<td class='step-details'>Successfully entered Shipping Zip/Postal Code: 62062</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:09 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonVerify Address With Ship Complaint</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:16 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonSave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:16 AM</td>
+					<td class='step-details'>Verify Valididate WC Card Number Text matches: Actual Value(71499544) Expected Value (71499544)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:17 AM</td>
+					<td class='step-details'>Verify Validate Lightning WC Name Text matches: Actual Value(Dolores Hunter) Expected Value (Dolores Hunter)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:17 AM</td>
+					<td class='step-details'>Verify Valididate WC Membership Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:17 AM</td>
+					<td class='step-details'>Verify Valididate WC Delivery Text matches: Actual Value(Delivery) Expected Value (Delivery)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:18 AM</td>
+					<td class='step-details'>Verify Valididate WC Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:18 AM</td>
+					<td class='step-details'>Verify Valididate WC # of Bottles Text matches: Actual Value(1) Expected Value (1)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:19 AM</td>
+					<td class='step-details'>Verify Valididate WC Member Status Text matches: Actual Value(Active) Expected Value (Active)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:57:19 AM</td>
+					<td class='step-details'>Verify Valididate Duration of MemberShip Text matches: Actual Value(3) Expected Value (3)</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:57:59 AM</td>
+					<td class='step-details'>Error message not displayed</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:57:59 AM</td>
+					<td class='step-details'>Complimentary Sign Up Data Row Number, 7</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>4:57:59 AM</td>
+					<td class='step-details'>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='dataCol inlineEditWrite']/div/input"}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'TP-LAP0039', ip: '192.168.0.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\kgiri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 177b4e6ffcccf73fba08dc74bf702716
+*** Element info: {Using=xpath, value=//td[@class='dataCol inlineEditWrite']/div/input}</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:01 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Name on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:09 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Logout button on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:13 AM</td>
+					<td class='step-details'>Successfully entered User Name: kgiri@chwinery.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:15 AM</td>
+					<td class='step-details'>Successfully entered Password: Tenpath!23</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:21 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonLog In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:46 AM</td>
+					<td class='step-details'>Successfully clicked on link: Lightning User Image</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:49 AM</td>
+					<td class='step-details'>Successfully clicked on link: Switch to SalesForce Classic</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:50 AM</td>
+					<td class='step-details'>Successfully Navigated toHome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:53 AM</td>
+					<td class='step-details'>Successfully clicked on link: WC Members</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:56 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonNew Member</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:58:58 AM</td>
+					<td class='step-details'>Successfully selected from Record Type of new record DropDown (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:02 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonWC Member Continue</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:02 AM</td>
+					<td class='step-details'>Card number not in datasheet.  Randomly generated as: 57238268</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:05 AM</td>
+					<td class='step-details'>Successfully entered Card Number: 57238268</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:07 AM</td>
+					<td class='step-details'>Successfully entered Sign Up Location: 999 Member Services</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:10 AM</td>
+					<td class='step-details'>Successfully entered First Name: Irene</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:12 AM</td>
+					<td class='step-details'>Successfully entered Last Name: Bairkataris</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:14 AM</td>
+					<td class='step-details'>Successfully selected from Delivery DropDown (Delivery)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:17 AM</td>
+					<td class='step-details'>Successfully selected from # of Bottles DropDown (1)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:20 AM</td>
+					<td class='step-details'>Successfully selected from Duration of Membership DropDown (6)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:21 AM</td>
+					<td class='step-details'>Verify MemberShip Type Text matches: Actual Value(Complimentary) Expected Value (Complimentary)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:21 AM</td>
+					<td class='step-details'>Verify Club Type Text matches: Actual Value(Variety) Expected Value (Variety)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:23 AM</td>
+					<td class='step-details'>Successfully entered Email: takieya121407@yahoo.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:26 AM</td>
+					<td class='step-details'>Successfully selected from Gender DropDown (Not Provided)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:28 AM</td>
+					<td class='step-details'>Successfully entered Birthdate: 7/18/1994</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:30 AM</td>
+					<td class='step-details'>Successfully entered Phone: (773) 641-9015</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:32 AM</td>
+					<td class='step-details'>Successfully entered Home Street: 623 ocean ave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:34 AM</td>
+					<td class='step-details'>Successfully entered Home City: Canton</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:37 AM</td>
+					<td class='step-details'>Successfully selected from Home State/Province DropDown (Georgia)</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:39 AM</td>
+					<td class='step-details'>Successfully entered Home Zip/Postal Code: 30114</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:41 AM</td>
+					<td class='step-details'>Successfully entered Shipping Street: 623 ocean ave</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:43 AM</td>
+					<td class='step-details'>Successfully entered Shipping City: Canton</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:45 AM</td>
+					<td class='step-details'>Successfully entered Shipping Zip/Postal Code: 30114</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:48 AM</td>
+					<td class='step-details'>Successfully clicked on link: Copy Home Address to Shipping Address Link, When atleast one field from shipping address is empty</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:51 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonVerify Address With Ship Complaint</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:59:54 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonSave</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>5:00:14 AM</td>
+					<td class='step-details'>8 Error Message: Error:
+Please verify the shipping address</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:00:16 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Name on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:00:24 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonUser Logout button on Menu</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:00:28 AM</td>
+					<td class='step-details'>Successfully entered User Name: kgiri@chwinery.com</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:00:30 AM</td>
+					<td class='step-details'>Successfully entered Password: Tenpath!23</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:00:36 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonLog In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:01:02 AM</td>
+					<td class='step-details'>Successfully clicked on link: Lightning User Image</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:01:04 AM</td>
+					<td class='step-details'>Successfully clicked on link: Switch to SalesForce Classic</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:01:05 AM</td>
+					<td class='step-details'>Successfully Navigated toHome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:01:08 AM</td>
+					<td class='step-details'>Successfully clicked on link: WC Members</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:01:11 AM</td>
+					<td class='step-details'>Successfully clicked on ButtonNew Member</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:01:13 AM</td>
+					<td class='step-details'>Successfully selected from Record Type of new record DropDown (Complimentary)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>1</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>356</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Oct 6, 2019 04:39:31 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Oct 6, 2019 05:01:13 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 21m 41s+785ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 0,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 1,
+				
+				passChild: 333,
+				failChild: 15,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 7,
+				skipChild: 0,
+				infoChild: 1,
+				exceptionsChild: 22,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

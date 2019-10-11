@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="TC_0001_Regression_MGSClassic_MonthlyMember_SignUp">
+    <classes>
+      <class name="com.MGSClassic_Execution_Classes.TC_0001_Regression_MGSClassic_MonthlyMember_SignUp"/>
+      
+    </classes>
+  </test> <!-- Test -->
+   <test  name="TC_0002_Regression_MGSClassic_GiftMember_SignUp">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0002_Regression_MGSClassic_GiftMember_SignUp"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0003_Regression_MGSClassic_Founder_SignUp">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0003_Regression_MGSClassic_Founder_SignUp"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0004_Regression_MGSClassic_Promotion_SignUp">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0004_Regression_MGSClassic_Promotion_SignUp"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0005_Regression_MGSClassic_CoopersHawkCares_SignUp">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0005_Regression_MGSClassic_CoopersHawkCares_SignUp"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0006_Regression_MGSClassic_Complimentary_SignUp">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0006_Regression_MGSClassic_Complimentary_SignUp"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0007_Regression_MGSClassic_Monthly_Activate">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0007_Regression_MGSClassic_Monthly_Activate"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0008_Regression_MGSClassic_Gift_Activate">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0008_Regression_MGSClassic_Gift_Activate"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0013_Regression_MGSClassic_Replace_NewCreditCard">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0013_Regression_MGSClassic_Replace_NewCreditCard"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0014_Regression_MGSClassic_Clear_DeclineStatus">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0014_Regression_MGSClassic_Clear_DeclineStatus"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0015_Regression_MGSClassic_Markoff_Tasting">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0015_Regression_MGSClassic_Markoff_Tasting"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0016_Regression_MGSClassic_Add_LoyaltyPoints">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0016_Regression_MGSClassic_Add_LoyaltyPoints"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0017_Regression_MGSClassic_MemberSignature_OptOut">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0017_Regression_MGSClassic_MemberSignature_OptOut"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0018_Regression_MGSClassic_MemberSignature_OptIn">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0018_Regression_MGSClassic_MemberSignature_OptIn"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0020_Regression_MGSClassic_Pickup_priorWOMwithNoupcharge_card">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0020_Regression_MGSClassic_Pickup_priorWOMwithNoupcharge_card"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0021_Regression_MGSClassic_Pickup_CurrentWOMwithNoupcharge_card">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0021_Regression_MGSClassic_Pickup_CurrentWOMwithNoupcharge_card"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0022_Regression_MGSClassic_Pickup_priorWOMwithUpcharge_card">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0022_Regression_MGSClassic_Pickup_priorWOMwithUpcharge_card"/>
+    </classes>
+  </test> <!-- Test -->
+    <test  name="TC_0023_Regression_MGSClassic_Pickup_CurrentWOMwithUpcharge_card">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0023_Regression_MGSClassic_Pickup_CurrentWOMwithUpcharge_card"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ <test  name="TC_0024_Regression_MGS_Swap_2WOMsfor1Lux">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0024_Regression_MGS_Swap_2WOMsfor1Lux"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0025_Regression_MGSClassic_convertGifttoMonthlyMembershipbeforeExpiry">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0025_Regression_MGSClassic_convertGifttoMonthlyMembershipbeforeExpiry"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0026_Regression_MGSClassic_convertGifttoMonthlyMembershipafterExpiry">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0026_Regression_MGSClassic_convertGifttoMonthlyMembershipafterExpiry"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0027_Regression_MGSClassic_ChangeDeliveryNextBillingCycle">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0027_Regression_MGSClassic_ChangeDeliveryNextBillingCycle"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0028_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_DecreasedCost">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0028_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_DecreasedCost"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0029_Regression_MGSClassic_ChangeClubTypeImmediately_DecreasedCost">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0029_Regression_MGSClassic_ChangeClubTypeImmediately_DecreasedCost"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0030_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_IncreasedCost">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0030_Regression_MGSClassic_ChangeClubTypeNextBillingCycle_IncreasedCost"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0031_Regression_MGSClassic_ChangeClubTypeImmediately_IncreasedCost">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0031_Regression_MGSClassic_ChangeClubTypeImmediately_IncreasedCost"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0032_Regression_MGSClassic_Change1to2BottleMembership_Immediately">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0032_Regression_MGSClassic_Change1to2BottleMembership_Immediately"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0033_Regression_MGSClassic_Change2to1BottleMembership_Immediately">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0033_Regression_MGSClassic_Change2to1BottleMembership_Immediately"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0034_Regression_MGSClassic_Change1to2BottleMembership_NextBillingCycle">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0034_Regression_MGSClassic_Change1to2BottleMembership_NextBillingCycle"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0035_Regression_MGSClassic_Change2to1BottleMembership_NextBillingCycle">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0035_Regression_MGSClassic_Change2to1BottleMembership_NextBillingCycle"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0036_Regression_MGSClassic_Replace_PersonalizedWCCard">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0036_Regression_MGSClassic_Replace_PersonalizedWCCard"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0037_Regression_MGSClassic_Add_Notes_NoteSection">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0037_Regression_MGSClassic_Add_Notes_NoteSection"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0038_Regression_MGSClassic_Cancel_Membership">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0038_Regression_MGSClassic_Cancel_Membership"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0039_Regression_MGSClassic_PutVacationHold_Membership">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0039_Regression_MGSClassic_PutVacationHold_Membership"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0041_Regression_MGSClassic_Update_ContactInformation">
+    <classes>
+     <class name="com.MGSClassic_Execution_Classes.TC_0041_Regression_MGSClassic_Update_ContactInformation"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ 
+</suite> <!-- Suite -->
+

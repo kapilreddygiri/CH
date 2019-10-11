@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteforClassic]">
+  <test thread-count="5" name="TestClassic(failed)">
+    <classes>
+      <class name="com.MGSClassic_Execution_Classes.TC_0002_Regression_MGSClassic_GiftMember_SignUp">
+        <methods>
+          <include name="Beforetest"/>
+          <include name="GiftMemberSignUP"/>
+          <include name="CloseBroswer"/>
+        </methods>
+      </class> <!-- com.MGSClassic_Execution_Classes.TC_0002_Regression_MGSClassic_GiftMember_SignUp -->
+      <class name="com.MGSClassic_Execution_Classes.TC_0001_Regression_MGSClassic_MonthlyMember_SignUp">
+        <methods>
+          <include name="Beforetest"/>
+          <include name="CloseBroswer"/>
+          <include name="ClassicMonthlyMemberSignUP"/>
+        </methods>
+      </class> <!-- com.MGSClassic_Execution_Classes.TC_0001_Regression_MGSClassic_MonthlyMember_SignUp -->
+    </classes>
+  </test> <!-- TestClassic(failed) -->
+</suite> <!-- Failed suite [SuiteforClassic] -->

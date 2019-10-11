@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+   <test  name="GiftMember_SignUp">
+    <classes>
+      <class name="com.Communities_Execution_Classes.GiftMember_SignUp"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test  name="MonthlyMember_SignUp">
+    <classes>
+      <class name="com.Communities_Execution_Classes.MonthlyMember_SignUp"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC0001_Regression_Communities_MonthlyMemberLogin">
+    <classes>
+      <class name="com.Communities_Execution_Classes.TC0001_Regression_Communities_MonthlyMemberLogin"/>
+      
+    </classes>
+  </test> <!-- Test -->
+ 
+  <test  name="TC0004_Regression_Communities_MonthlyMember_UpdateCard">
+    <classes>
+      <class name="com.Communities_Execution_Classes.TC0004_Regression_Communities_MonthlyMember_UpdateCard"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC0005_Regression_Communities_MonthlyMember_ClearUTP">
+    <classes>
+      <class name="com.Communities_Execution_Classes.TC0005_Regression_Communities_MonthlyMember_ClearUTP"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC0006_Regression_Communities_MonthlyMember_MemberSignatureOptOut">
+    <classes>
+      <class name="com.Communities_Execution_Classes.TC0006_Regression_Communities_MonthlyMember_MemberSignatureOptOut"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC0007_Regression_Communities_MonthlyMember_MemberSignatureOptIn">
+    <classes>
+      <class name="com.Communities_Execution_Classes.TC0007_Regression_Communities_MonthlyMember_MemberSignatureOptIn"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC0008_Regression_Communities_MonthlyMember_Change1to2BottlesImmediately">
+    <classes>
+      <class name="com.Communities_Execution_Classes.TC0008_Regression_Communities_MonthlyMember_Change1to2BottlesImmediately"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  	 <test  name="TC0009_Regression_Communities_MonthlyMember_Change2to1BottleImmediately">
+    <classes>
+      <class name="com.Communities_Execution_Classes.TC0009_Regression_Communities_MonthlyMember_Change2to1BottleImmediately"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
+

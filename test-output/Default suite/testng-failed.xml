@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.MGSLightning_Execution_Classes.TC_0031_Regression_MGSLightning_ChangeClubTypeImmediately_IncreasedCost">
+        <methods>
+          <include name="TC_0031_Regression_MGSClassic_ChangeClubTypeImmediately_IncreasedCost"/>
+          <include name="CloseBroswer"/>
+          <include name="Beforetest"/>
+        </methods>
+      </class> <!-- com.MGSLightning_Execution_Classes.TC_0031_Regression_MGSLightning_ChangeClubTypeImmediately_IncreasedCost -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

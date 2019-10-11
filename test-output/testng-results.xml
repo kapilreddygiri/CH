@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="188419" started-at="2019-10-11T09:15:35 CDT" finished-at="2019-10-11T09:18:44 CDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="188419" started-at="2019-10-11T09:15:35 CDT" finished-at="2019-10-11T09:18:44 CDT">
+      <class name="com.MGSLightning_Execution_Classes.TC_0031_Regression_MGSLightning_ChangeClubTypeImmediately_IncreasedCost">
+        <test-method status="PASS" signature="Beforetest()[pri:0, instance:com.MGSLightning_Execution_Classes.TC_0031_Regression_MGSLightning_ChangeClubTypeImmediately_IncreasedCost@4e41089d]" name="Beforetest" is-config="true" duration-ms="55821" started-at="2019-10-11T09:15:35 CDT" finished-at="2019-10-11T09:16:31 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforetest -->
+        <test-method status="PASS" signature="TC_0031_Regression_MGSClassic_ChangeClubTypeImmediately_IncreasedCost()[pri:0, instance:com.MGSLightning_Execution_Classes.TC_0031_Regression_MGSLightning_ChangeClubTypeImmediately_IncreasedCost@4e41089d]" name="TC_0031_Regression_MGSClassic_ChangeClubTypeImmediately_IncreasedCost" duration-ms="128391" started-at="2019-10-11T09:16:31 CDT" finished-at="2019-10-11T09:18:40 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0031_Regression_MGSClassic_ChangeClubTypeImmediately_IncreasedCost -->
+        <test-method status="PASS" signature="CloseBroswer()[pri:0, instance:com.MGSLightning_Execution_Classes.TC_0031_Regression_MGSLightning_ChangeClubTypeImmediately_IncreasedCost@4e41089d]" name="CloseBroswer" is-config="true" duration-ms="4157" started-at="2019-10-11T09:18:40 CDT" finished-at="2019-10-11T09:18:44 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBroswer -->
+      </class> <!-- com.MGSLightning_Execution_Classes.TC_0031_Regression_MGSLightning_ChangeClubTypeImmediately_IncreasedCost -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

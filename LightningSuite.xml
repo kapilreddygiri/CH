@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="TC_0027_Regression_MGSLightning_ChangeDeliveryNextBillingCycle">
+    <classes>
+     <class name="com.MGSLightning_Execution_Classes.TC_0027_Regression_MGSLightning_ChangeDeliveryNextBillingCycle"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0028_Regression_MGSLightning_ChangeClubTypeNextBillingCycle_DecreasedCost">
+    <classes>
+     <class name="com.MGSLightning_Execution_Classes.TC_0028_Regression_MGSLightning_ChangeClubTypeNextBillingCycle_DecreasedCost"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0029_Regression_MGSLightning_ChangeClubTypeImmediately_DecreasedCost">
+    <classes>
+     <class name="com.MGSLightning_Execution_Classes.TC_0029_Regression_MGSLightning_ChangeClubTypeImmediately_DecreasedCost"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0030_Regression_MGSLightning_ChangeClubTypeNextBillingCycle_IncreasedCost">
+    <classes>
+     <class name="com.MGSLightning_Execution_Classes.TC_0030_Regression_MGSLightning_ChangeClubTypeNextBillingCycle_IncreasedCost"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0031_Regression_MGSLightning_ChangeClubTypeImmediately_IncreasedCost">
+    <classes>
+     <class name="com.MGSLightning_Execution_Classes.TC_0031_Regression_MGSLightning_ChangeClubTypeImmediately_IncreasedCost"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0032_Regression_MGSLightning_Change1to2BottleMembership_Immediately">
+    <classes>
+     <class name="com.MGSLightning_Execution_Classes.TC_0032_Regression_MGSLightning_Change1to2BottleMembership_Immediately"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0033_Regression_MGSLightning_Change2to1BottleMembership_Immediately">
+    <classes>
+     <class name="com.MGSLightning_Execution_Classes.TC_0033_Regression_MGSLightning_Change2to1BottleMembership_Immediately"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0034_Regression_MGSLightning_Change1to2BottleMembership_NextBillingCycle">
+    <classes>
+     <class name="com.MGSLightning_Execution_Classes.TC_0034_Regression_MGSLightning_Change1to2BottleMembership_NextBillingCycle"/>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="TC_0035_Regression_MGSLightning_Change2to1BottleMembership_NextBillingCycle">
+    <classes>
+     <class name="com.MGSLightning_Execution_Classes.TC_0035_Regression_MGSLightning_Change2to1BottleMembership_NextBillingCycle"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
+

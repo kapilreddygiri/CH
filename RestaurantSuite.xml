@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<test  name="TC_0001_Regression_RUI_MonthlySignUP">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0001_Regression_RUI_MonthlySignUP"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+   <test  name="TC_0002_Regression_RUI_GiftSignUPwithActivation">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0002_Regression_RUI_GiftSignUPwithActivation"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="TC_0003_Regression_RUI_SignUpMonthlyTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0003_Regression_RUI_SignUpMonthlyTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0007_Regression_RUI_SignUpGiftTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0007_Regression_RUI_SignUpGiftTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0011_Regression_RUI_ActivateGiftwithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0011_Regression_RUI_ActivateGiftwithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ <test  name="TC_0015_Regression_RUI_ChangecontactInformationwithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0015_Regression_RUI_ChangecontactInformationwithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0023_Regression_RUI_AddNoteswithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0023_Regression_RUI_AddNoteswithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0035_Regression_RUI_MemberSignatureOptOutwithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0035_Regression_RUI_MemberSignatureOptOutwithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0043_Regression_RUI_MemberSignatureOptInwithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0043_Regression_RUI_MemberSignatureOptInwithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0040_Regression_RUI_CantAddLoyaltyPointswithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0040_Regression_RUI_CantAddLoyaltyPointswithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+   <test  name="TC_0055_Regression_RUI_PickUpPriorWOMUpchargewithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0055_Regression_RUI_PickUpPriorWOMUpchargewithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test  name="TC_0130_Regression_RUI_PickUpCurrentWOMUpchargewithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0130_Regression_RUI_PickUpCurrentWOMUpchargewithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+ <test  name="TC_0107_Regression_RUI_Swap2WOMsfor1LuxwithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0107_Regression_RUI_Swap2WOMsfor1LuxwithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test  name="TC_0103_Regression_RUI_MarkOffTastingwithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0103_Regression_RUI_MarkOffTastingwithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0099_Regression_RUI_PutVacationHoldwithTRA">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0099_Regression_RUI_PutVacationHoldwithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0071_Regression_RUI_ChangedeliveryNextBillingCyclewithTRA">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0071_Regression_RUI_ChangedeliveryNextBillingCyclewithTRA"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0075_Regression_RUI_ChangeClubtypeNextBillingcycleDecreasedcostwithTRA">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0075_Regression_RUI_ChangeClubtypeNextBillingcycleDecreasedcostwithTRA"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0079_Regression_RUI_ChangeClubtypeNextBillingcycleIncreasedcostwithTRA">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0079_Regression_RUI_ChangeClubtypeNextBillingcycleIncreasedcostwithTRA"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0083_Regression_RUI_Changefrom1to2bottlemembershipImmediatelytwithTRA">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0083_Regression_RUI_Changefrom1to2bottlemembershipImmediatelytwithTRA"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0087_Regression_RUI_Changefrom2to1bottlemembershipImmediatelytwithTRA">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0087_Regression_RUI_Changefrom2to1bottlemembershipImmediatelytwithTRA"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0091_Regression_RUI_Changefrom1to2bottlemembershipNextBillingCyclewithTRA">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0091_Regression_RUI_Changefrom1to2bottlemembershipNextBillingCyclewithTRA"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0095_Regression_RUI_Changefrom2to1bottlemembershipNextBillingCycletwithTRA">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0095_Regression_RUI_Changefrom2to1bottlemembershipNextBillingCycletwithTRA"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+<test	name="TC_0111_Regression_RUI_ExtendgiftmembershipbeforeexpiringwithTRA">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0111_Regression_RUI_ExtendgiftmembershipbeforeexpiringwithTRA" />
+
+		</classes>
+	</test> <!-- Test -->
+
+<test	name="TC_0115_Regression_RUI_ExtendgiftmembershipafterexpiringwithTRA">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0115_Regression_RUI_ExtendgiftmembershipafterexpiringwithTRA" />
+
+		</classes>
+	</test> <!-- Test -->
+
+<test name="TC_0019_Regression_RUI_CancelMembershipwithTRA">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0019_Regression_RUI_CancelMembershipwithTRA" />
+
+		</classes>
+	</test> <!-- Test -->
+
+<test  name="TC_0004_Regression_RUI_SignUpMonthlyBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0004_Regression_RUI_SignUpMonthlyBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+ <test  name="TC_0008_Regression_RUI_SignUpGiftBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0008_Regression_RUI_SignUpGiftBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test  name="TC_0012_Regression_RUI_ActivateGiftwithBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0012_Regression_RUI_ActivateGiftwithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0016_Regression_RUI_ChangecontactInformationwithBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0016_Regression_RUI_ChangecontactInformationwithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0024_Regression_RUI_AddNoteswithBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0024_Regression_RUI_AddNoteswithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+ <test  name="TC_0036_Regression_RUI_MemberSignatureOptOutwithBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0036_Regression_RUI_MemberSignatureOptOutwithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0044_Regression_RUI_MemberSignatureOptInwithBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0044_Regression_RUI_MemberSignatureOptInwithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+<test  name="TC_0041_Regression_RUI_CantAddLoyaltyPointswithBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0041_Regression_RUI_CantAddLoyaltyPointswithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0056_Regression_RUI_PickUpPriorWOMUpchargewithBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0056_Regression_RUI_PickUpPriorWOMUpchargewithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+ <test  name="TC_0108_Regression_RUI_Swap2WOMsfor1LuxwithBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0108_Regression_RUI_Swap2WOMsfor1LuxwithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0104_Regression_RUI_NotAbletoMarkOffTastingwithBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0104_Regression_RUI_NotAbletoMarkOffTastingwithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0100_Regression_RUI_PutVacationHoldwithBARTENDER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0100_Regression_RUI_PutVacationHoldwithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0076_Regression_RUI_ChangeClubtypeNextBillingcycleDecreasedcostwithBARTENDER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0076_Regression_RUI_ChangeClubtypeNextBillingcycleDecreasedcostwithBARTENDER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+  <test  name="TC_0080_Regression_RUI_ChangeClubtypeNextBillingcycleIncreasedcostwithBARTNEDER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0080_Regression_RUI_ChangeClubtypeNextBillingcycleIncreasedcostwithBARTNEDER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0084_Regression_RUI_Changefrom1to2bottlemembershipImmediatelywithBARTENDER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0084_Regression_RUI_Changefrom1to2bottlemembershipImmediatelywithBARTENDER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0088_Regression_RUI_Changefrom2to1bottlemembershipImmediatelywithBARTENDER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0088_Regression_RUI_Changefrom2to1bottlemembershipImmediatelywithBARTENDER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0092_Regression_RUI_Changefrom1to2bottlemembershipNextBillingCyclewithBARTENDER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0092_Regression_RUI_Changefrom1to2bottlemembershipNextBillingCyclewithBARTENDER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0072_Regression_RUI_ChangedeliveryNextBillingCyclewithBARTENDER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0072_Regression_RUI_ChangedeliveryNextBillingCyclewithBARTENDER"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0096_Regression_RUI_Changefrom2to1bottlemembershipNextBillingCyclewithBARTENDER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0096_Regression_RUI_Changefrom2to1bottlemembershipNextBillingCyclewithBARTENDER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+<test	name="TC_0112_Regression_RUI_ExtendgiftmembershipbeforeexpiringwithBartender">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0112_Regression_RUI_ExtendgiftmembershipbeforeexpiringwithBartender" />
+
+		</classes>
+	</test> <!-- Test -->
+
+<test	name="TC_0116_Regression_RUI_ExtendgiftmembershipafterexpiringwithBartender">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0116_Regression_RUI_ExtendgiftmembershipafterexpiringwithBartender" />
+
+		</classes>
+	</test> <!-- Test -->
+
+<test name="TC_0020_Regression_RUI_CancelMembershipwithBARTENDER">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0020_Regression_RUI_CancelMembershipwithBARTENDER" />
+
+		</classes>
+	</test> <!-- Test -->
+  
+  <test  name="TC_0005_Regression_RUI_SignUpMonthlySERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0005_Regression_RUI_SignUpMonthlySERVER"/>
+    </classes>
+  </test> <!-- Test -->
+   
+  
+  <test  name="TC_0009_Regression_RUI_SignUpGiftSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0009_Regression_RUI_SignUpGiftSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    
+  <test  name="TC_0013_Regression_RUI_ActivateGiftwithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0013_Regression_RUI_ActivateGiftwithSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+  
+
+  <test  name="TC_0017_Regression_RUI_ChangecontactInformationwithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0017_Regression_RUI_ChangecontactInformationwithSERVER"/>
+    </classes>
+  </test> <!-- Test -->  
+ 
+  
+  <test  name="TC_0025_Regression_RUI_AddNoteswithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0025_Regression_RUI_AddNoteswithSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+   
+  <test  name="TC_0037_Regression_RUI_MemberSignatureOptOutwithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0037_Regression_RUI_MemberSignatureOptOutwithSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="TC_0045_Regression_RUI_MemberSignatureOptInwithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0045_Regression_RUI_MemberSignatureOptInwithSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+  
+<test  name="TC_0042_Regression_RUI_CantAddLoyaltyPointswithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0042_Regression_RUI_CantAddLoyaltyPointswithSERVER"/>
+    </classes>
+ </test> <!-- Test --> 
+  
+  
+  <test  name="TC_0057_Regression_RUI_PickUpPriorWOMUpchargewithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0057_Regression_RUI_PickUpPriorWOMUpchargewithSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    
+  <test  name="TC_0132_Regression_RUI_PickUpCurrentWOMUpchargewithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0132_Regression_RUI_PickUpCurrentWOMUpchargewithSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ 
+  <test  name="TC_0109_Regression_RUI_Swap2WOMsfor1LuxwithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0109_Regression_RUI_Swap2WOMsfor1LuxwithSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="TC_0105_Regression_RUI_NotAbletoMarkOffTastingwithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0105_Regression_RUI_NotAbletoMarkOffTastingwithSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    
+  <test  name="TC_0101_Regression_RUI_PutVacationHoldwithSERVER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0101_Regression_RUI_PutVacationHoldwithSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+   
+<test  name="TC_0073_Regression_RUI_ChangedeliveryNextBillingCyclewithSERVER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0073_Regression_RUI_ChangedeliveryNextBillingCyclewithSERVER"/>
+    </classes>
+  </test> <!-- Test -->
+    
+  <test  name="TC_0077_Regression_RUI_ChangeClubtypeNextBillingcycleDecreasedcostwithSERVER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0077_Regression_RUI_ChangeClubtypeNextBillingcycleDecreasedcostwithSERVER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+     <test  name="TC_0081_Regression_RUI_ChangeClubtypeNextBillingcycleIncreasedcostwithSERVER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0081_Regression_RUI_ChangeClubtypeNextBillingcycleIncreasedcostwithSERVER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0085_Regression_RUI_Changefrom1to2bottlemembershipImmediatelywithSERVER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0085_Regression_RUI_Changefrom1to2bottlemembershipImmediatelywithSERVER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0089_Regression_RUI_Changefrom2to1bottlemembershipImmediatelywithSERVER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0089_Regression_RUI_Changefrom2to1bottlemembershipImmediatelywithSERVER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0093_Regression_RUI_Changefrom1to2bottlemembershipNextBillingCyclewithSERVER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0093_Regression_RUI_Changefrom1to2bottlemembershipNextBillingCyclewithSERVER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0097_Regression_RUI_Changefrom2to1bottlemembershipNextBillingCyclewithSERVER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0097_Regression_RUI_Changefrom2to1bottlemembershipNextBillingCyclewithSERVER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+<test	name="TC_0113_Regression_RUI_ExtendgiftmembershipbeforeexpiringwithServer">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0113_Regression_RUI_ExtendgiftmembershipbeforeexpiringwithServer" />
+
+		</classes>
+	</test> <!-- Test -->
+
+<test	name="TC_0117_Regression_RUI_ExtendgiftmembershipafterexpiringwithServer">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0117_Regression_RUI_ExtendgiftmembershipafterexpiringwithServer" />
+
+		</classes>
+	</test> <!-- Test -->
+
+<test name="TC_0021_Regression_RUI_CancelMembershipwithSERVER">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0021_Regression_RUI_CancelMembershipwithSERVER" />
+
+		</classes>
+	</test> <!-- Test -->
+ 
+  <test  name="TC_0006_Regression_RUI_SignUpMonthlyMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0006_Regression_RUI_SignUpMonthlyMANAGER"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+<test  name="TC_0010_Regression_RUI_SignUpGiftMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0010_Regression_RUI_SignUpGiftMANAGER"/>
+    </classes>
+ </test> <!-- Test -->
+
+  <test  name="TC_0014_Regression_RUI_ActivateGiftwithMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0014_Regression_RUI_ActivateGiftwithMANAGER"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0018_Regression_RUI_ChangecontactInformationwithMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0018_Regression_RUI_ChangecontactInformationwithMANAGER"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0026_Regression_RUI_AddNoteswithMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0026_Regression_RUI_AddNoteswithMANAGER"/>
+    </classes>
+ </test> <!-- Test -->
+
+<test  name="TC_0038_Regression_RUI_MemberSignatureOptOutwithMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0038_Regression_RUI_MemberSignatureOptOutwithMANAGER"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="TC_0046_Regression_RUI_MemberSignatureOptInwithMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0046_Regression_RUI_MemberSignatureOptInwithMANAGER"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="TC_0039_Regression_RUI_AddLoyaltyPointswithManager">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0039_Regression_RUI_AddLoyaltyPointswithManager"/>
+    </classes>
+  </test> <!-- Test -->
+  
+<test  name="TC_0058_Regression_RUI_PickUpPriorWOMUpchargewithMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0058_Regression_RUI_PickUpPriorWOMUpchargewithMANAGER"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test  name="TC_0133_Regression_RUI_PickUpCurrentWOMUpchargewithMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0133_Regression_RUI_PickUpCurrentWOMUpchargewithMANAGER"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <test  name="TC_0110_Regression_RUI_Swap2WOMsfor1LuxwithMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0110_Regression_RUI_Swap2WOMsfor1LuxwithMANAGER"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0106_Regression_RUI_MarkOffTastingwithMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0106_Regression_RUI_MarkOffTastingwithMANAGER"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0074_Regression_RUI_ChangedeliveryNextBillingCyclewithMANAGER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0074_Regression_RUI_ChangedeliveryNextBillingCyclewithMANAGER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+<test  name="TC_0078_Regression_RUI_ChangeClubtypeNextBillingcycleDecreasedcostwithMANAGER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0078_Regression_RUI_ChangeClubtypeNextBillingcycleDecreasedcostwithMANAGER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+ <test  name="TC_0102_Regression_RUI_PutVacationHoldwithMANAGER">
+    <classes>
+     <class name="com.Restaurant_Execution_Classes.TC_0102_Regression_RUI_PutVacationHoldwithMANAGER"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+<test  name="TC_0082_Regression_RUI_ChangeClubtypeNextBillingcycleIncreasedcostwithMANAGER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0082_Regression_RUI_ChangeClubtypeNextBillingcycleIncreasedcostwithMANAGER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+      <test  name="TC_0086_Regression_RUI_Changefrom1to2bottlemembershipImmediatelywithMANAGER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0086_Regression_RUI_Changefrom1to2bottlemembershipImmediatelywithMANAGER"/>
+      
+    </classes>
+  </test> <!-- Test -->  
+   
+  <test  name="TC_0090_Regression_RUI_Changefrom2to1bottlemembershipImmediatelywithMANAGER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0090_Regression_RUI_Changefrom2to1bottlemembershipImmediatelywithMANAGER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+   <test  name="TC_0094_Regression_RUI_Changefrom1to2bottlemembershipNextBillingCyclewithMANAGER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0094_Regression_RUI_Changefrom1to2bottlemembershipNextBillingCyclewithMANAGER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+ 
+  
+  <test  name="TC_0098_Regression_RUI_Changefrom2to1bottlemembershipNextBillingCyclewithMANAGER">
+    <classes>
+      <class name="com.Restaurant_Execution_Classes.TC_0098_Regression_RUI_Changefrom2to1bottlemembershipNextBillingCyclewithMANAGER"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+	<test	name="TC_0114_Regression_RUI_ExtendgiftmembershipbeforeexpiringwithManager">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0114_Regression_RUI_ExtendgiftmembershipbeforeexpiringwithManager" />
+
+		</classes>
+	</test> <!-- Test -->
+
+		<test	name="TC_0118_Regression_RUI_ExtendgiftmembershipafterexpiringwithManager">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0118_Regression_RUI_ExtendgiftmembershipafterexpiringwithManager" />
+
+		</classes>
+	</test> <!-- Test -->
+
+<test name="TC_0022_Regression_RUI_CancelMembershipwithMANAGER">
+		<classes>
+			<class
+				name="com.Restaurant_Execution_Classes.TC_0022_Regression_RUI_CancelMembershipwithMANAGER" />
+
+		</classes>
+
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
+
